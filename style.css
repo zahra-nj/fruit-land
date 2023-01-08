@@ -1,0 +1,106 @@
+@font-face{
+    font-family: yekan;
+    src : url("../fonts/iranyekanwebbold.ttf");
+    font-family: negar;
+    src: url("fonts/font-farsi-negareh-ufont.ir_/Digi\ Negare\ Bold.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+    font-family: negar;
+}
+
+.main-body{
+    width: 80%;
+    margin: auto;
+    align-items: flex-end;
+}
+
+.logo-img{
+    margin-top: -7px;
+}
+
+ul{
+    margin-right: 50px;
+    font-size: 1.5rem;
+}
+
+ul li a{
+    padding: 0 10px;
+    position: relative;
+}
+ul li a::after{
+    content: '';
+    width: 0;
+    height: 10px;
+    background: #F14a60;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -55%;
+    transition: 0.5s;
+}
+
+ul li a:hover::after{
+    width: 100%;
+}
+
+.navbar-icons img{
+    height: 25px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.text-left-column{
+    font-family: 'negar';
+    color: rgb(61, 61, 61);
+}
+
+.text-left-column h1{
+    letter-spacing: 0.08rem;
+}
+
+.text-left-column h3{
+    letter-spacing: 0.05rem;
+}
+
+.text-left-column p{
+    text-align: right;
+}
+.text-red-left-column{
+    color: #F81452;
+}
+
+.buttons button{
+    padding: 5px 20px;
+    margin: 0 15px;
+    font-family: 'Acme', sans-serif;
+    border-radius: 30px;
+
+}
+
+.social-icons{
+    width: 200px;
+    opacity: 0.8;
+    text-align: center;
+    position: relative;
+    margin-left:160px ;
+}
+
+.social-icons img{
+    height: 20px;
+    margin: 0 14px;
+}
+
+.social-icons::after{
+    content: "";
+    width: 160px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    left: -160px;
+    top: 10px;
+    opacity: 0.8;
+}
